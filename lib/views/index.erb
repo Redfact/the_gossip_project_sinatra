@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip !</h1>
+    <% gossips.each_index{ |index| %>
+        <p>
+          <%= gossips[index].author %>
+          <% url = "/gossips/#{index}" %>
+          <br/>
+          <a href=<%=url%> >
+          	<%= gossips[index].content %>
+          </a>
+        </p>
+    <%} %>
+    <a href="/gossips/new/">Creer un nouveau potin</a>
+  </body>
+</html>

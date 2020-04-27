@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifier un potin</title>
+</head>
+<body>
+	<%url="/gossips/#{index}/edit/"%>
+	<h3>Modifier votre potin :</h3>
+	<form action=<%=url%> method="POST">
+		Modifie ton potin 	<input type="text" name="Content">
+		<br/><br/>
+		<input type="submit" value="Valider">
+	</form>
+</body>
+</html>
